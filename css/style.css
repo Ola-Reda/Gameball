@@ -60,58 +60,58 @@ header {
     position: sticky;
     top: 0px;
 }
-header p{
+header p {
     display: inline-block;
     margin-right: 12px;
     font-weight: 300;
 }
-header a{
+header a {
     color: black;
     font-weight: 600;
     border-bottom: 2px solid black;
 }
-header a:hover{
+header a:hover {
     border: none;
 }
 /*end header*/
 /*start navbar*/
-nav{
+nav {
     padding: 20px;
 }
-nav .container{
+nav .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-nav img{
+nav img {
     width: 100%;
 }
-nav ul{
+nav ul {
     display: flex;
 }
-nav ul a{
+nav ul a {
     display: flex;
     color: black;
     padding: 25px;
     transition: .3s;
 }
-nav ul a:hover{
+nav ul a:hover {
     color: #6b6768;
 }
-nav ul a.active{
+nav ul a.active {
     font-weight: bold;
     color: black;
 }
-nav .login a:first-child{
+nav .login a:first-child {
     color: black;
     transition: .3s;
     margin-right: 20px;
 }
-nav .login a:first-child:hover{
+nav .login a:first-child:hover {
     color: #6b6768;
 }
-nav .login a:last-child{
+nav .login a:last-child {
     background-color: black;
     color: white;
     font-size: 14px;
@@ -121,54 +121,57 @@ nav .login a:last-child{
     border: 2px solid black;
     transition: all .4s;
 }
-nav .login a:last-child:hover{
+nav .login a:last-child:hover {
     background-color: var(--main-color);
     color: black;
 }
 /*end navbar*/
 /*start main*/
-main .container{
+main .container {
     display: flex;
 }
-main .text{
+main .text {
     margin-right: 20px;
 }
-main .text .text-info{
+main .text .text-info {
     padding: 10px;
     font-weight: 300;
 }
-main .text .text-info h1{
+main .text .text-info h1 {
     font-size: 58px;
     margin-bottom: 8px;
 }
-main .text .text-info p{
+main .text .text-info p {
     font-size: 24px;
     margin-top: 10px;
 }
-main .text .text-images{
+main .text .text-images {
     display: flex;
     align-items: center;
 }
-main .text .text-images a img{
+main .text .text-images a img {
     width: 300px;
     margin-right: 30px;
 }
-main .text .text-images span{
+main .text .text-images .contact span {
     display: block;
     color: #40454f;
     margin-bottom: 10px;
 }
-main .text .text-images a{
+main .text .text-images .contact a {
     color: black;
     font-size: 18px;
     font-weight: 600;
-    vertical-align: middle;
 }
-main .text .text-images img{
+main .text .text-images .contact img {
     vertical-align: middle;
     margin-left: 10px;
+    transition: .4s;
 }
-main .text .group{
+main .text .text-images .contact a:hover img {  
+    transform: rotate(-40deg);
+}
+main .text .group {
     margin-top: 30px;
     margin-left: 10px;
     margin-right: 215px;
@@ -176,16 +179,16 @@ main .text .group{
     justify-content: space-between;
     gap: 45px;
 }
-main .text .group p{
+main .text .group p {
     font-size: 18px;
     color: #40454f;
 }
-main .images img{
+main .images img {
     width: 200px;
 } 
 /*end main*/
 /*start section trust*/
-.trust{
+.trust {
     margin-top: 70px;
 }
 .trust .box {
@@ -206,22 +209,22 @@ main .images img{
 }
 /*end section trust*/
 /*start section stats*/
-.stats{
+.stats {
     margin-top: 90px;
     margin-bottom: 90px;
 }
 /*start info div*/
-.stats .text{
+.stats .text {
     text-align: center;
     padding-right: 260px;
     padding-left: 255px;
     margin-bottom: 40px;
 }
-.stats .text h2{
+.stats .text h2 {
     font-size: 48px;
     margin-bottom: 8px;
 }
-.stats .text p{
+.stats .text p {
     color: #40454f;
     font-size: 18px;
     font-weight: 300;
@@ -230,7 +233,7 @@ main .images img{
 }
 /*end info div*/
 /*start info div*/
-.stats .info{
+.stats .info {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -239,19 +242,22 @@ main .images img{
 .stats .info{
     border-top: 1px solid #e1e4eb;
 }
-.stats .info .unit{
+.stats .info .unit {
     border-right: 1px solid #e1e4eb;
     padding: 50px 100px 1px;
+}
+.stats .info .unit:last-child {
+    border-right: none;
 }
 .stats .info span{
     display: block;
 }
-.stats .info span:first-child{
+.stats .info span:first-child {
     font-size: 60px;
     font-family: Recoleta; 
     margin-bottom: 15px;
 }
-.stats .info span:last-child{
+.stats .info span:last-child {
     color: #0f3683; 
     font-size: 18px;
     font-weight: 300;
@@ -351,6 +357,10 @@ footer .box li {
 }
 footer .box a {
     color: white;
+    transition: all .4s;
+}
+footer .box a:hover {
+    color: #8b8b8b;
 }
 footer .box h5 {
     color: white;
